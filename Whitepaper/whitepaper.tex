@@ -1,0 +1,86 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{article} % Default font size and left-justified equations
+%\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+\usepackage{nccmath}
+\usepackage{todonotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\definecolor{ocre}{HTML}{0021F5} % Define the orange color used for highlighting throughout the book
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture,overlay]
+%\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{Figures/Chapter1/CSworkflowV1}};
+\draw (current page.center) node [fill=ocre!0!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Large\centering\sffamily\parbox[c][][t]{0.6\paperwidth}
+{
+\includegraphics[width=0.7\textwidth, trim = 0cm 5cm 0cm 5cm, clip]{Figures/logo.pdf}\\[20pt]	
+
+\Large\textbf{\uppercase{Ki, the decentralised privacy-first operating system for the home}}\\ % Book title
+{\small White paper v1.4 - March 4th 2019\\[30pt]}
+
+
+{\normalsize  
+Réda Berrehili - \small{Ki Foundation}\\
+Tarek Awwad - \small{Ki Foundation}\\
+ Lionel Brunie - \small{LIRIS}\\
+Sonia Ben Mokhtar - \small{LIRIS}\\
+Fabrice Epelboin - \small{SciencesPo}}\\[10pt]
+
+}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+\pagebreak
+\tableofcontents
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+%\frontmatter
+%\pagestyle{empty}
+%\pagestyle{fancy} % Print headers again
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTERS
+%----------------------------------------------------------------------------------------
+
+%\mainmatter 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{Ki foundation - White paper}
+\include{main}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+%\backmatter
+\pagestyle{empty}
+%\include{Bibliography/bibliography}
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+%\cleardoublepage
+%\phantomsection
+%\setlength{\columnsep}{0.75cm}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+%\printindex
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

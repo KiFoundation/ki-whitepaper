@@ -1,0 +1,84 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn, twoside]{book} % Default font size and left-justified equations
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+
+%\begin{tikzpicture}[remember picture,overlay]
+%%\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{Figures/Chapter1/CSworkflowV1}};
+%\draw (current page.center) node [fill=ocre!0!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Large\centering\sffamily\parbox[c][][t]{0.8\paperwidth}
+%{
+%\centering \includegraphics[width=1\textwidth, trim = 1cm 8cm 1cm 8cm, clip]{Figures/logos.pdf}\\[40pt]
+%
+%
+%%\centering \small {\textcolor{ocre}{\textbf{|}} INSA \textcolor{ocre}{\textbf{|}} Universit\"at Passau\textcolor{ocre}{\textbf{|}} IRIXYS \textcolor{ocre}{\textbf{|}}} \\[40pt]
+%\Large\textbf{Context-Aware Worker Selection For Efficient Quality Control In Crowdsourcing}\\[40pt] % Book title
+%
+%{\small PhD thesis submitted in cotutelle-procedure to :\\[10pt]
+%	\large \textcolor{ocre}{\textbf{|}} Institut national des sciences appliqu\'{e}es de Lyon \textcolor{ocre}{\textbf{|}}\\[8pt]
+%	\small Ecole doctorale d’Informatique et de Math\'{e}matiques (InfoMaths) \\[10pt]
+%	\textbf{\&}\\[10pt]
+%	\large \textcolor{ocre}{\textbf{|}} Universit\"{a}t Passau \textcolor{ocre}{\textbf{|}}\\
+%	\small Fakult\"{a}t f\"{u}r Informatik und Mathematik}\\[20pt] % Subtitle
+%
+%
+%\includegraphics[width=0.7\textwidth, trim = 10cm 8cm 10cm 8cm, clip]{logo.pdf}\\[20pt]	
+%
+%{\Large Tarek AWWAD}\\[20pt]
+%{\normalsize  \textcolor{ocre}{\textbf{|}} Supervisors \textcolor{ocre}{\textbf{|}} \\ Prof. Dr. Lionel BRUNIE \\ Prof. Dr. Harald KOSCH}\\[10pt]
+%{\normalsize \textcolor{ocre}{\textbf{|}} Co-Supervisors \textcolor{ocre}{\textbf{|}} \\ Dr. Nadia BENNANI \\ Dr. Veronika REHN-SONIGO}\\[40pt]
+%{\normalsize{13 December 2018}} 
+%}}; % Author name
+%\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+\frontmatter
+\pagestyle{empty}
+\pagestyle{fancy} % Print headers again
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter 
+\include{main}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\backmatter
+\pagestyle{empty}
+%\include{Bibliography/bibliography}
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+%\cleardoublepage
+%\phantomsection
+%\setlength{\columnsep}{0.75cm}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+%\printindex
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
