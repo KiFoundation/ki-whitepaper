@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{orwell2009nineteen}
+George Orwell.
+\newblock {\em Nineteen eighty-four}.
+\newblock Everyman's Library, 2009.
+
+\bibitem{SoftpediaFace}
+Softpedia News.
+\newblock Facebook offers free internet in the philippines, 2015.
+
+\bibitem{Newsweek2017}
+Newsweek.
+\newblock Who controls the internet? facebook and google dominance could cause
+  ‘the death of the web’, 2017.
+
+\bibitem{Statista2019}
+Statista.
+\newblock Global energy consumption - statistics and facts, 2019.
+
+\bibitem{CryptoNote}
+Nicolas van Saberhagen.
+\newblock Cryptonote whitepaper, 2013.
+
+\bibitem{rivest2001leak}
+Ronald~L Rivest, Adi Shamir, and Yael Tauman.
+\newblock How to leak a secret.
+\newblock In {\em International Conference on the Theory and Application of
+  Cryptology and Information Security}, pages 552--565. Springer, 2001.
+
+\bibitem{lenacota2015}
+Guido~Lena Cota, Sonia~Ben Mokhtar, Julia Lawall, Gilles Muller, Gabriele
+  Gianini, Ernesto Damiani, and Lionel Brunie.
+\newblock A framework for the design configuration of accountable
+  selfish-resilient peer-to-peer systems.
+\newblock In {\em 2015 IEEE 34th Symposium on Reliable Distributed Systems
+  (SRDS)}, pages 276--285. IEEE, 2015.
+
+\bibitem{cota2017analysing}
+Guido~Lena Cota, Sonia~Ben Mokhtar, Gabriele Gianini, Ernesto Damiani, Julia
+  Lawall, Gilles Muller, and Lionel Brunie.
+\newblock Analysing selfishness flooding with seine.
+\newblock In {\em 2017 47th Annual IEEE/IFIP International Conference on
+  Dependable Systems and Networks (DSN)}, pages 603--614. IEEE, 2017.
+
+\bibitem{saboia1977autoregressive}
+Joao Luiz~Maurity Saboia.
+\newblock Autoregressive integrated moving average (arima) models for birth
+  forecasting.
+\newblock {\em Journal of the American Statistical Association},
+  72(358):264--270, 1977.
+
+\end{thebibliography}
