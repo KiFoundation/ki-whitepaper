@@ -8,7 +8,10 @@
 \usepackage{todonotes}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[export]{adjustbox}
+\usepackage{float}
 \definecolor{ocre}{HTML}{0021F5} % Define the orange color used for highlighting throughout the book
+\setlength{\tabcolsep}{5pt}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -19,28 +22,29 @@
 \thispagestyle{empty}
 
 \begin{tikzpicture}[remember picture,overlay]
-%\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{Figures/Chapter1/CSworkflowV1}};
 \draw (current page.center) node [fill=ocre!0!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Large\centering\sffamily\parbox[c][][t]{0.6\paperwidth}
 {
-\includegraphics[width=0.7\textwidth, trim = 0cm 5cm 0cm 5cm, clip]{Figures/logo.pdf}\\[20pt]	
+\includegraphics[width=0.7\textwidth, trim = 0.9cm 5cm 0cm 5cm, clip]{Figures/logo.pdf}\\[20pt]	
 
-\Large\textbf{\uppercase{Ki, the decentralised privacy-first operating system for the home}}\\ % Book title
-{\small White paper v1.4 - March 4th 2019\\[30pt]}
+\Large\textbf{\uppercase{KI, Building an ecosystem for a truly decentralized internet
+}}\\[20pt] % Book title
 
 
-{\normalsize  
-Réda Berrehili - \small{Ki Foundation}\\
-Tarek Awwad - \small{Ki Foundation}\\
- Lionel Brunie - \small{LIRIS}\\
-Sonia Ben Mokhtar - \small{LIRIS}\\
-Fabrice Epelboin - \small{SciencesPo}}\\[10pt]
 
-}}; % Author name
+{
+\normalsize{R\'eda Berrehili} - \small{Ki Foundation}\\
+\normalsize{Tarek Awwad} - \small{Ki Foundation}\\
+\normalsize{Lionel Brunie} - \small{LIRIS}\\
+\normalsize{Sonia Ben Mokhtar} - \small{LIRIS}\\
+\normalsize{Fabrice Epelboin} - \small{SciencesPo}}\\[100pt]% Author name
+
+\centering{\small Whitepaper v1.6 - May 20th 2019\\[30pt]}
+}}; 
 \end{tikzpicture}
 \vfill
 \endgroup
 \pagebreak
-\tableofcontents
+
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
@@ -48,7 +52,9 @@ Fabrice Epelboin - \small{SciencesPo}}\\[10pt]
 %\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
 
 %\frontmatter
-%\pagestyle{empty}
+\thispagestyle{empty}
+\tableofcontents
+\cleardoublepage
 %\pagestyle{fancy} % Print headers again
 
 
@@ -60,7 +66,7 @@ Fabrice Epelboin - \small{SciencesPo}}\\[10pt]
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\thepage}
-\lhead{Ki foundation - White paper}
+\lhead{Ki foundation - Whitepaper v1.5}
 \include{main}
 
 %----------------------------------------------------------------------------------------
